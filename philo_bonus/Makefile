@@ -11,6 +11,7 @@ NAME    		=    philo_bonus
 
 all: $(NAME)
 
+bonus: $(NAME)
 
 $(NAME):  $(OBJS)
 	cc $(FLAGS) $(OBJS) -o $(NAME) 
