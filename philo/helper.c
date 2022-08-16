@@ -6,7 +6,7 @@
 /*   By: wboutzou <wboutzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 18:00:09 by wboutzou          #+#    #+#             */
-/*   Updated: 2022/08/16 18:14:49 by wboutzou         ###   ########.fr       */
+/*   Updated: 2022/08/16 18:16:38 by wboutzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ void	ft_usleep(long sleep)
 
 	start = ft_time(0);
 	usleep(sleep * 900);
-	while (ft_time(start) + sleep)
+	while (ft_time(start) < sleep)
 		usleep(400);
 }
